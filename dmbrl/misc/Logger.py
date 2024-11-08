@@ -74,4 +74,4 @@ class Logger:
         self.logger.error(message)
 
 # Instantiate a global logger
-logger = Logger(log_dir='./logs')
+logger = Logger(log_dir=os.path.join(".", 'logs'))
