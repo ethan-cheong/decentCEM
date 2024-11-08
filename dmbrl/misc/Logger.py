@@ -45,6 +45,7 @@ class Logger:
         else:
             # Ensure the directory exists, create if it doesn't
             dir_path = os.path.dirname(path) if os.path.isdir(path) else path
+            print(dir_path)
             os.makedirs(dir_path, exist_ok=True)
             log_file = os.path.join(path, "log.txt")
 
