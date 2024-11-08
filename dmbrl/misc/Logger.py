@@ -36,14 +36,22 @@ class Logger:
             if isinstance(handler, logging.FileHandler):
                 self.logger.removeHandler(handler)
 
-        # Determine the file path
+        # Normalize the path to handle cross-platform differences
+        path = os.path.normpath(path)
+
+        # If `no_add_path` is False, treat `path` as a directory
         if no_add_path:
             log_file = path
         else:
-            os.makedirs(path, exist_ok=True)
+            # Ensure the directory exists, create if it doesn't
+            dir_path = os.path.dirname(path) if os.path.isdir(path) else path
+            os.makedirs(dir_path, exist_ok=True)
             log_file = os.path.join(path, "log.txt")
 
-        # Create new file handler
+        # Normalize the log file path again in case it's a directory
+        log_file = os.path.normpath(log_file)
+
+        # Create a new file handler
         fh = logging.FileHandler(log_file)
         fh.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
