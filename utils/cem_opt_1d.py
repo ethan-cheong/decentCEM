@@ -15,7 +15,7 @@ path_root = Path(__file__).parents[1]
 sys.path.append(str(path_root))
 # local module
 from scripts.test_opt_func import hard1d1
-from dmbrl.misc.logger import logger
+from dmbrl.misc.Logger import logger
 
 
 def cem(obj, init_mean, init_var, lb, ub, args, debug=True, csv_debug_writer=None, instance=0):
