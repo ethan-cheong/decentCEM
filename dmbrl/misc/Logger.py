@@ -21,12 +21,36 @@ class Logger:
         
         # File handler
         if log_to_file and log_dir:
-            os.makedirs(log_dir, exist_ok=True)
-            log_file = os.path.join(log_dir, "log.txt")
-            fh = logging.FileHandler(log_file)
-            fh.setLevel(logging.INFO)
-            fh.setFormatter(ch_formatter)
-            self.logger.addHandler(fh)
+            self.set_file_handler(log_dir)
+
+    def set_file_handler(self, path, no_add_path=False):
+        """Sets or updates the file handler for logging.
+        
+        Arguments:
+            path: (str) Path for the log file. Can be a directory or a full file path.
+            no_add_path: (bool) If True, use `path` as the full log file path. 
+                         If False, use `path` as a directory and save log file in it.
+        """
+        # Remove any existing file handlers
+        for handler in self.logger.handlers:
+            if isinstance(handler, logging.FileHandler):
+                self.logger.removeHandler(handler)
+
+        # Determine the file path
+        if no_add_path:
+            log_file = path
+        else:
+            os.makedirs(path, exist_ok=True)
+            log_file = os.path.join(path, "log.txt")
+
+        # Create new file handler
+        fh = logging.FileHandler(log_file)
+        fh.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        fh.setFormatter(formatter)
+        
+        # Add the new file handler
+        self.logger.addHandler(fh)
 
     def info(self, message):
         """Logs an informational message."""
@@ -42,3 +66,4 @@ class Logger:
 
 # Instantiate a global logger
 logger = Logger(log_dir='./logs')
+``
