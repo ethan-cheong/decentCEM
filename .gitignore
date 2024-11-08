@@ -3,7 +3,5 @@
 */__pycache__
 ./log/*
 *.csv
-log*
-log/*
 output/*
 .*swp
