@@ -66,4 +66,3 @@ class Logger:
 
 # Instantiate a global logger
 logger = Logger(log_dir='./logs')
-``
