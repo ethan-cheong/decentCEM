@@ -324,7 +324,7 @@ if __name__ == "__main__":
     postfix = f'-{args.popsize}' + postfix
 
     logdir = os.path.join(
-        f'./log/hard1d1/{args.alg}',
+        '.', 'log', 'hard1d1', f'{args.alg}',
         datetime.now().strftime("%Y-%m-%d--%H-%M:%S-%f" + postfix)
     )
     # strftime("%Y-%m-%d--%H:%M:%S", localtime())+postfix)

@@ -36,12 +36,12 @@ class Logger:
             if isinstance(handler, logging.FileHandler):
                 self.logger.removeHandler(handler)
 
-        # Normalize the path to handle cross-platform differences
+        # Determine the file path
         if no_add_path:
-            log_file = os.path.normpath(path)
+            log_file = path
         else:
-            os.makedirs(os.path.normpath(path), exist_ok=True)
-            log_file = os.path.normpath(os.path.join(path, "log.txt"))
+            os.makedirs(path, exist_ok=True)
+            log_file = os.path.join(path, "log.txt")
 
         # Create new file handler
         fh = logging.FileHandler(log_file)
