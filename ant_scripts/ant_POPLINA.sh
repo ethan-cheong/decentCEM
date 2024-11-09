@@ -4,7 +4,7 @@
 python mbexp.py \
     -env gym_ant \
     -logdir log/poplina \
-    -o exp_cfg.exp_cfg.ntrain_iters 50 \
+    -o exp_cfg.exp_cfg.ntrain_iters 2 \
     -o exp_cfg.exp_cfg.ninit_rollouts 0 \
     -o exp_cfg.sim_cfg.task_hor 200 \
     -o ctrl_cfg.cem_cfg.cem_type POPLINA-INIT \
