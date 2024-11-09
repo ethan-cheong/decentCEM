@@ -325,7 +325,7 @@ if __name__ == "__main__":
 
     logdir = os.path.join(
         '.', 'log', 'hard1d1', f'{args.alg}',
-        datetime.now().strftime("%Y-%m-%d--%H-%M:%S-%f" + postfix)
+        datetime.now().strftime("%Y-%m-%d--%H-%M%S-%f" + postfix)
     )
     # strftime("%Y-%m-%d--%H:%M:%S", localtime())+postfix)
     
