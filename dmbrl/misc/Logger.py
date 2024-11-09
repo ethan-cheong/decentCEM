@@ -24,58 +24,54 @@ class Logger:
             self.set_file_handler(log_dir)
 
     def set_file_handler(self, path, no_add_path=False):
-      pass
-        # """Sets or updates the file handler for logging.
+        """Sets or updates the file handler for logging.
         
-        # Arguments:
-        #     path: (str) Path for the log file. Can be a directory or a full file path.
-        #     no_add_path: (bool) If True, use `path` as the full log file path. 
-        #                  If False, use `path` as a directory and save log file in it.
-        # """
-        # # Remove any existing file handlers
-        # for handler in self.logger.handlers:
-        #     if isinstance(handler, logging.FileHandler):
-        #         self.logger.removeHandler(handler)
+        Arguments:
+            path: (str) Path for the log file. Can be a directory or a full file path.
+            no_add_path: (bool) If True, use `path` as the full log file path. 
+                         If False, use `path` as a directory and save log file in it.
+        """
+        # Remove any existing file handlers
+        for handler in self.logger.handlers:
+            if isinstance(handler, logging.FileHandler):
+                self.logger.removeHandler(handler)
 
-        # # Normalize the path to handle cross-platform differences
-        # path = os.path.normpath(path)
+        # Normalize the path to handle cross-platform differences
+        path = os.path.normpath(path)
 
-        # # If `no_add_path` is False, treat `path` as a directory
-        # if no_add_path:
-        #     log_file = path
-        # else:
-        #     # Ensure the directory exists, create if it doesn't
-        #     dir_path = os.path.dirname(path) if os.path.isdir(path) else path
-        #     print(dir_path)
-        #     os.makedirs(dir_path, exist_ok=True)
-        #     log_file = os.path.join(path, "log.txt")
+        # If `no_add_path` is False, treat `path` as a directory
+        if no_add_path:
+            log_file = path
+        else:
+            # Ensure the directory exists, create if it doesn't
+            dir_path = os.path.dirname(path) if os.path.isdir(path) else path
+            print(dir_path)
+            os.makedirs(dir_path, exist_ok=True)
+            log_file = os.path.join(path, "log.txt")
 
-        # # Normalize the log file path again in case it's a directory
-        # log_file = os.path.normpath(log_file)
+        # Normalize the log file path again in case it's a directory
+        log_file = os.path.normpath(log_file)
 
-        # # Create a new file handler
-        # fh = logging.FileHandler(log_file)
-        # fh.setLevel(logging.INFO)
-        # formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-        # fh.setFormatter(formatter)
+        # Create a new file handler
+        fh = logging.FileHandler(log_file)
+        fh.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        fh.setFormatter(formatter)
         
-        # # Add the new file handler
-        # self.logger.addHandler(fh)
+        # Add the new file handler
+        self.logger.addHandler(fh)
 
     def info(self, message):
-      pass
-        # """Logs an informational message."""
-        # self.logger.info(message)
+        """Logs an informational message."""
+        self.logger.info(message)
 
     def warning(self, message):
-      pass
-        # """Logs a warning message."""
-        # self.logger.warning(message)
+        """Logs a warning message."""
+        self.logger.warning(message)
 
     def error(self, message):
-      pass
-        # """Logs an error message."""
-        # self.logger.error(message)
+        """Logs an error message."""
+        self.logger.error(message)
 
 # Instantiate a global logger
 logger = Logger(log_dir=os.path.join(".", 'logs'))
