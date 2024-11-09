@@ -20,6 +20,7 @@ class Logger:
         self.logger.addHandler(ch)
         
         # File handler
+        print(log_dir)
         if log_to_file and log_dir:
             self.set_file_handler(log_dir)
 
@@ -43,10 +44,8 @@ class Logger:
         if no_add_path:
             log_file = path
         else:
-            # Ensure the directory exists, create if it doesn't
-            dir_path = os.path.dirname(path) if os.path.isdir(path) else path
-            print(dir_path)
-            os.makedirs(dir_path, exist_ok=True)
+            print(path)
+            os.makedirs(path, exist_ok=True)
             log_file = os.path.join(path, "log.txt")
 
         # Normalize the log file path again in case it's a directory
@@ -74,4 +73,4 @@ class Logger:
         self.logger.error(message)
 
 # Instantiate a global logger
-logger = Logger(log_dir=os.path.join(".", 'logs'))
+logger = Logger(log_dir=os.path.join('./logs/'))
