@@ -1,0 +1,60 @@
+2024-11-09 17:26:39,873 - INFO - Starting the experiments
+2024-11-09 17:26:39,895 - INFO - ####################################################################
+2024-11-09 17:26:39,895 - INFO - Starting training iteration 1.
+2024-11-09 17:26:39,973 - INFO - Current timesteps: 100 / 200, average time: 0.00003
+2024-11-09 17:26:40,049 - INFO - Average action selection time: 0.0000
+2024-11-09 17:26:40,050 - INFO - Rollout length: 200
+2024-11-09 17:26:40,050 - INFO - Training return obtained: [133.44347180269725]
+2024-11-09 17:26:40,050 - INFO - Testing the policy
+2024-11-09 17:26:40,127 - INFO - Current timesteps: 100 / 200, average time: 0.00003
+2024-11-09 17:26:40,205 - INFO - Average action selection time: 0.0000
+2024-11-09 17:26:40,206 - INFO - Rollout length: 200
+2024-11-09 17:26:40,206 - INFO - Testing the policy
+2024-11-09 17:26:40,283 - INFO - Current timesteps: 100 / 200, average time: 0.00003
+2024-11-09 17:26:40,359 - INFO - Average action selection time: 0.0000
+2024-11-09 17:26:40,360 - INFO - Rollout length: 200
+2024-11-09 17:26:40,360 - INFO - Testing the policy
+2024-11-09 17:26:40,437 - INFO - Current timesteps: 100 / 200, average time: 0.00004
+2024-11-09 17:26:40,513 - INFO - Average action selection time: 0.0000
+2024-11-09 17:26:40,513 - INFO - Rollout length: 200
+2024-11-09 17:26:40,514 - INFO - Testing the policy
+2024-11-09 17:26:40,591 - INFO - Current timesteps: 100 / 200, average time: 0.00003
+2024-11-09 17:26:40,670 - INFO - Average action selection time: 0.0000
+2024-11-09 17:26:40,670 - INFO - Rollout length: 200
+2024-11-09 17:26:40,670 - INFO - Testing the policy
+2024-11-09 17:26:40,750 - INFO - Current timesteps: 100 / 200, average time: 0.00003
+2024-11-09 17:26:40,828 - INFO - Average action selection time: 0.0000
+2024-11-09 17:26:40,828 - INFO - Rollout length: 200
+2024-11-09 17:26:40,829 - INFO - Testing the agent at iteration 1, return in 5 runs, mean+-stderr: 120.13975982201869 +- 17.710976230585253
+2024-11-09 17:26:41,619 - INFO - The forward model training loss: [7.57527  7.530379 8.002405 7.685041 7.446512]
+2024-11-09 17:26:41,664 - INFO - The forward model training loss: [7.553992  7.5175014 7.946483  7.6534386 7.418428 ]
+2024-11-09 17:26:41,708 - INFO - The forward model training loss: [7.4918394 7.485493  7.732561  7.5750923 7.3559227]
+2024-11-09 17:26:41,750 - INFO - The forward model training loss: [7.625658  7.529393  7.8168263 7.6665173 7.46255  ]
+2024-11-09 17:26:41,793 - INFO - The forward model training loss: [7.5826354 7.526275  7.8973303 7.6183434 7.449356 ]
+2024-11-09 17:26:41,793 - INFO - ####################################################################
+2024-11-09 17:26:41,793 - INFO - Starting training iteration 2.
+2024-11-09 17:29:16,211 - INFO - Current timesteps: 100 / 200, average time: 1.54313
+2024-11-09 17:31:49,053 - INFO - Average action selection time: 1.5353
+2024-11-09 17:31:49,053 - INFO - Rollout length: 200
+2024-11-09 17:31:49,054 - INFO - Training return obtained: [133.9542283016287]
+2024-11-09 17:31:49,054 - INFO - Testing the policy
+2024-11-09 17:34:21,037 - INFO - Current timesteps: 100 / 200, average time: 1.51878
+2024-11-09 17:36:55,015 - INFO - Average action selection time: 1.5288
+2024-11-09 17:36:55,016 - INFO - Rollout length: 200
+2024-11-09 17:36:55,016 - INFO - Testing the policy
+2024-11-09 17:39:26,780 - INFO - Current timesteps: 100 / 200, average time: 1.51660
+2024-11-09 17:42:00,443 - INFO - Average action selection time: 1.5261
+2024-11-09 17:42:00,443 - INFO - Rollout length: 200
+2024-11-09 17:42:00,444 - INFO - Testing the policy
+2024-11-09 17:44:32,534 - INFO - Current timesteps: 100 / 200, average time: 1.51985
+2024-11-09 17:47:06,579 - INFO - Average action selection time: 1.5296
+2024-11-09 17:47:06,579 - INFO - Rollout length: 200
+2024-11-09 17:47:06,580 - INFO - Testing the policy
+2024-11-09 17:49:38,445 - INFO - Current timesteps: 100 / 200, average time: 1.51760
+2024-11-09 17:52:11,241 - INFO - Average action selection time: 1.5222
+2024-11-09 17:52:11,241 - INFO - Rollout length: 200
+2024-11-09 17:52:11,242 - INFO - Testing the policy
+2024-11-09 17:54:42,871 - INFO - Current timesteps: 100 / 200, average time: 1.51524
+2024-11-09 17:57:16,027 - INFO - Average action selection time: 1.5229
+2024-11-09 17:57:16,028 - INFO - Rollout length: 200
+2024-11-09 17:57:16,028 - INFO - Testing the agent at iteration 2, return in 5 runs, mean+-stderr: 146.9534712030182 +- 2.7906516250731688
