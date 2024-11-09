@@ -10,7 +10,7 @@ from .optimizer import Optimizer
 from .policy_network import BC_A_policy
 from .policy_network import BC_KL_policy
 from .policy_network import whitening_util
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 
 class MPCPIOptimizer(Optimizer):

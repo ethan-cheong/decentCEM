@@ -9,7 +9,7 @@ from .optimizer import Optimizer
 from .policy_network import BC_A_S_policy
 from .policy_network import whitening_util
 from .. import utils
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 import time
 
 

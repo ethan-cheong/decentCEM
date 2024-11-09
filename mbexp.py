@@ -12,7 +12,7 @@ from dotmap import DotMap
 from dmbrl.misc.MBExp import MBExperiment
 from dmbrl.controllers.MPC import MPC
 from dmbrl.config import create_config
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 import random
 import numpy as np

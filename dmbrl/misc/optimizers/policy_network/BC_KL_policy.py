@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 
 from . import base_policy
 from . import tf_networks
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 from dmbrl.modeling.layers import FC
 from ... import utils
 

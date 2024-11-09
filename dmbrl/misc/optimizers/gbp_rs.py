@@ -6,7 +6,7 @@ import numpy as np
 import tensorflow as tf
 
 from .optimizer import Optimizer
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 
 class GBPRandomOptimizer(Optimizer):

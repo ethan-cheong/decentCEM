@@ -7,7 +7,7 @@ import numpy as np
 
 from . import base_policy
 from . import tf_networks
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 from ... import utils
 
 

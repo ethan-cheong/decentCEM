@@ -20,7 +20,7 @@ from dmbrl.misc.optimizers import POPLINPIOptimizer
 from dmbrl.misc.optimizers import POPLINPEOptimizer
 from dmbrl.misc.optimizers import MPCPIOptimizer
 from dmbrl.misc.optimizers import MPCPISamplerOptimizer
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 
 class MPC(Controller):

@@ -8,7 +8,7 @@ import numpy as np
 import gpflow
 
 from dmbrl.misc.DotmapUtils import get_required_argument
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 
 class TFGP:

@@ -12,7 +12,7 @@ from scipy.io import savemat, loadmat
 from dmbrl.modeling.utils import TensorStandardScaler
 from dmbrl.modeling.layers import FC
 from dmbrl.misc.DotmapUtils import *
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 
 class NN:

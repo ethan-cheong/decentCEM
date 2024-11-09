@@ -9,7 +9,7 @@ import numpy as np
 from .optimizer import Optimizer
 from .policy_network import BC_KL_sampler_A_policy
 from .policy_network import whitening_util
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 STD_MAX = np.exp(1)
 STD_MIN = np.exp(-3)

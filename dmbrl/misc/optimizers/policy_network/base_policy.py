@@ -14,7 +14,7 @@ from matplotlib import pyplot as plt
 from . import whitening_util
 from . import tf_utils
 from . import tf_networks
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 
 def limit_action(action, lb=-1, ub=1):

@@ -5,7 +5,7 @@ from __future__ import absolute_import
 import tensorflow as tf
 import numpy as np
 import scipy.stats as stats
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 from .optimizer import Optimizer
 

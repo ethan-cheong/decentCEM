@@ -6,7 +6,7 @@ import tensorflow as tf
 import numpy as np
 
 # local
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 from .cem import CEMOptimizer 
 from .. import utils
 

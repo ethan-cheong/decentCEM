@@ -9,7 +9,7 @@ from . import base_policy
 from . import tf_networks
 from . import tf_utils
 from . import whitening_util
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 from ... import utils
 
 
