@@ -10,7 +10,7 @@ python mbexp.py \
     -o ctrl_cfg.cem_cfg.cem_type POPLINA-INIT \
     -o ctrl_cfg.cem_cfg.training_scheme BC-AR \
     -o ctrl_cfg.cem_cfg.test_policy 1 \
-    -o ctrl_cfg.cem_cfg.test_policy_epochs 5 \
+    -o ctrl_cfg.cem_cfg.test_policy_epochs 1 \
     -o ctrl_cfg.cem_cfg.eval_ctrl_type MPC \
     -o ctrl_cfg.cem_cfg.debug_optimizer False \
     -ca model-type PE \

@@ -5,3 +5,4 @@
 # *.csv
 output/*
 .*swp
+*.DS_Store

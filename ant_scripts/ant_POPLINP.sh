@@ -13,7 +13,7 @@ python mbexp.py \
     -o ctrl_cfg.cem_cfg.policy_network_shape [32] \
     -o ctrl_cfg.opt_cfg.init_var 0.1 \
     -o ctrl_cfg.cem_cfg.test_policy 1 \
-    -o ctrl_cfg.cem_cfg.test_policy_epochs 5 \
+    -o ctrl_cfg.cem_cfg.test_policy_epochs 1 \
     -o ctrl_cfg.cem_cfg.eval_ctrl_type MPC \
     -o ctrl_cfg.cem_cfg.debug_optimizer False \
     -ca model-type PE \
