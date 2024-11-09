@@ -18,7 +18,7 @@ from mbbl.config import init_path
 from mbbl.env import base_env_wrapper
 from mbbl.env import env_register
 from mbbl.env import env_util
-from mbbl.util.common import logger
+from dmbrl.misc.Logger import logger
 
 
 class env(base_env_wrapper.base_env):
