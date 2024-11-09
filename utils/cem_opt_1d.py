@@ -335,7 +335,10 @@ if __name__ == "__main__":
     logger.info(f"Using seed {args.seed} for training") 
     logger.info(f"The arguments are: {args}")
     
-    csvfile = open(os.path.join(logdir, 'result.csv'), 'w')
+    csv_filepath = os.path.join(logdir, 'result.csv')
+    # make folder if it doesn't exist
+    os.makedirs(os.path.dirname(csv_filepath), exist_ok=True)
+    csvfile = open(csv_filepath, 'w')
     csv_writer = csv.writer(csvfile)
     # header: episode, sol, cost
     # last row: -1, cost_min, cost_mean, cost_max, cost_std
