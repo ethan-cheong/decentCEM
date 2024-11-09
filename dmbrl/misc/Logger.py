@@ -44,9 +44,8 @@ class Logger:
         if no_add_path:
             log_file = path
         else:
-            print(path)
-            os.makedirs(path, exist_ok=True)
             log_file = os.path.join(path, "log.txt")
+        os.makedirs(log_file, exist_ok=True)
 
         # Normalize the log file path again in case it's a directory
         log_file = os.path.normpath(log_file)
