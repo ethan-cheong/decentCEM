@@ -3,7 +3,7 @@
 
 python mbexp.py \
     -env gym_ant \
-    -logdir log \
+    -logdir log/poplinp \
     -o exp_cfg.exp_cfg.ntrain_iters 2 \
     -o exp_cfg.exp_cfg.ninit_rollouts 0 \
     -o exp_cfg.sim_cfg.task_hor 200 \
