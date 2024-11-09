@@ -11,7 +11,7 @@ python mbexp.py \
     -o ctrl_cfg.cem_cfg.cem_type DecentCEM \
     -o ctrl_cfg.cem_cfg.test_policy 1 \
     -o ctrl_cfg.cem_cfg.ensemble_size 5 \
-    -o ctrl_cfg.cem_cfg.test_policy_epochs 5 \
+    -o ctrl_cfg.cem_cfg.test_policy_epochs 1 \
     -o ctrl_cfg.cem_cfg.eval_ctrl_type MPC \
     -o ctrl_cfg.cem_cfg.use_prev_sol True \
     -o ctrl_cfg.cem_cfg.debug_optimizer False \
