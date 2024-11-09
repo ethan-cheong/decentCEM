@@ -10,7 +10,7 @@ from dotmap import DotMap
 
 from dmbrl.misc.DotmapUtils import get_required_argument
 from dmbrl.misc.Agent import Agent
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 import copy
 import numpy as np
 import tensorflow as tf

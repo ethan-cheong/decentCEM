@@ -6,7 +6,7 @@ from copy import deepcopy
 import numpy as np
 from gym.wrappers.monitoring.video_recorder import VideoRecorder
 from dotmap import DotMap
-from dmbrl.misc import logger
+from dmbrl.misc.Logger import logger
 
 import time
 
