@@ -2,6 +2,6 @@
 *.pdf
 */__pycache__
 # ./log/*
-*.csv
+# *.csv
 output/*
 .*swp
