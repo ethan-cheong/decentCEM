@@ -1,0 +1,24 @@
+2024-11-10 00:02:32,112 - INFO - Starting the experiments
+2024-11-10 00:02:32,136 - INFO - ####################################################################
+2024-11-10 00:02:32,136 - INFO - Starting training iteration 1.
+2024-11-10 00:02:32,178 - INFO - Average action selection time: 0.0000
+2024-11-10 00:02:32,178 - INFO - Rollout length: 50
+2024-11-10 00:02:32,178 - INFO - Training return obtained: [40.254457818873476]
+2024-11-10 00:02:32,178 - INFO - Testing the policy
+2024-11-10 00:02:32,217 - INFO - Average action selection time: 0.0000
+2024-11-10 00:02:32,218 - INFO - Rollout length: 50
+2024-11-10 00:02:32,218 - INFO - Testing the agent at iteration 1, return in 1 runs, mean+-stderr: 43.554860414935945 +- 0.0
+2024-11-10 00:02:35,177 - INFO - The forward model training loss: [10.453046  7.908848  8.285709  8.910879  8.244065]
+2024-11-10 00:02:35,192 - INFO - The forward model training loss: [10.446266   7.9024653  8.281532   8.903808   8.239139 ]
+2024-11-10 00:02:35,205 - INFO - The forward model training loss: [10.436124  7.893767  8.275863  8.891191  8.231834]
+2024-11-10 00:02:35,219 - INFO - The forward model training loss: [10.418456  7.880585  8.267307  8.866704  8.220032]
+2024-11-10 00:02:35,233 - INFO - The forward model training loss: [10.385703  7.858837  8.25396   8.817623  8.200533]
+2024-11-10 00:02:35,233 - INFO - ####################################################################
+2024-11-10 00:02:35,233 - INFO - Starting training iteration 2.
+2024-11-10 00:05:08,021 - INFO - Average action selection time: 3.0547
+2024-11-10 00:05:08,021 - INFO - Rollout length: 50
+2024-11-10 00:05:08,021 - INFO - Training return obtained: [39.83032906822644]
+2024-11-10 00:05:08,021 - INFO - Testing the policy
+2024-11-10 00:07:33,267 - INFO - Average action selection time: 2.9039
+2024-11-10 00:07:33,268 - INFO - Rollout length: 50
+2024-11-10 00:07:33,268 - INFO - Testing the agent at iteration 2, return in 1 runs, mean+-stderr: 45.496234570808056 +- 0.0
